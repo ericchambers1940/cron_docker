@@ -1,1 +1,0 @@
-* * * * * root echo hello >> /var/log/cron.log
