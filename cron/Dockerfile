@@ -2,7 +2,7 @@
 FROM ubuntu:20.04
 
 # Updating packages and installing cron
-RUN apt-get update && apt-get install cron -y 
+RUN apt-get update && apt-get install cron -y && apt-get install openssh-client -y 
 
 # Adding crontab to the appropriate location
 ADD hello-cron /etc/cron.d/hello-cron

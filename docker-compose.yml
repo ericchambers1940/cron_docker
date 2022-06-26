@@ -1,0 +1,12 @@
+services:
+  cron:
+    build: cron/
+    networks:
+      - test-network
+  second-container:
+    build: second_container/
+    networks:
+      - test-network
+
+networks:
+  test-network:
